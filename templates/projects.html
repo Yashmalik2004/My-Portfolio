@@ -24,9 +24,9 @@
   >
     <div class="min-h-screen flex flex-col">
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1edea] px-10 py-3"
+        class="flex flex-col md:flex-row items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1edea] px-4 sm:px-6 md:px-10 py-3 gap-3 md:gap-0"
       >
-        <div class="flex items-center gap-4 text-[#181410]">
+        <div class="flex flex-col md:flex-row items-center gap-4 text-[#181410] w-full md:w-auto">
           <div class="flex items-center gap-2">
             <img
               src="../images/website-imgs/logo.png"
@@ -39,14 +39,14 @@
               Yash Malik
             </h2>
           </div>
-          <div class="h-5 w-px bg-[#ccc]"></div>
-          <div class="flex items-center gap-3 text-sm text-[#8a6f5c]">
+          <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
+          <div class="flex flex-wrap items-center gap-3 text-sm text-[#8a6f5c]">
             <a
               href="mailto:yashmalik4832004two@gmail.com"
-              class="hover:underline"
+              class="hover:underline break-all"
               >yashmalik4832004two@gmail.com</a
             >
-            <div class="h-5 w-px bg-[#ccc]"></div>
+            <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
             <a
               href="https://github.com/Yashmalik2004"
               target="_blank"
@@ -73,9 +73,8 @@
             </a>
           </div>
         </div>
-
-        <div class="flex flex-1 justify-end gap-8">
-          <div class="flex items-center gap-9">
+        <div class="flex flex-1 justify-end gap-4 md:gap-8 w-full md:w-auto mt-3 md:mt-0">
+          <div class="flex flex-wrap items-center gap-4 md:gap-9">
             <a
               class="text-[#181410] text-sm font-medium leading-normal"
               href="index.html"
@@ -110,123 +109,118 @@
               </button></a
             >
           </div>
-          <!-- <div
-            class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-            style="background-image: url('../images/myimg.jpg')"
-          ></div> -->
         </div>
       </header>
 
-      <main class="px-10 py-10 max-w-6xl mx-auto">
-        <section class="mb-12">
-          <h1 class="text-4xl font-bold mb-2">Projects</h1>
-          <p class="text-[#8a6f5c] max-w-xl">
+      <main class="px-2 sm:px-6 md:px-10 lg:px-40 py-8 max-w-full md:max-w-6xl mx-auto w-full flex-1">
+        <section class="mb-8 sm:mb-12">
+          <h1 class="text-2xl sm:text-4xl font-bold mb-2">Projects</h1>
+          <p class="text-[#8a6f5c] max-w-xl text-sm sm:text-base">
             A curated selection of my most impactful projects, blending AI/ML,
             system design, and purposeful development.
           </p>
         </section>
 
-        <div class="grid grid-cols-1 gap-12">
-  <!-- Project 1 -->
-  <div class="p-6 bg-[#fcfaf8] rounded" data-aos="fade-up">
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-      <a href="https://devfolio.co/projects/observo-e254">
-        <img
-          class="rounded-xl w-full aspect-video object-cover"
-          src="../images/projects/observo.jpg"
-          alt="Observo AI"
-        />
-      </a>
-      <div>
-        <h2 class="text-2xl font-bold mb-2">
-          Observo – AI-Powered Violence Detection
-        </h2>
-        <p class="text-[#8a6f5c]">
-          A real-time violence detection system using CCTV, Object
-          Detection and pose estimation. Integrated with Server for campus
-          and public safety. Sends instant alerts upon threat detection.
-        </p>
-        <p class="text-[#8a6f5c] mt-1">
-          Skills: AI/ML, Computer Vision, Edge Computing
-        </p>
-      </div>
-    </div>
-  </div>
+        <div class="flex flex-col gap-8 sm:gap-12">
+          <!-- Project 1 -->
+          <div class="p-4 sm:p-6 bg-[#fcfaf8] rounded" data-aos="fade-up">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
+              <a href="https://devfolio.co/projects/observo-e254">
+                <img
+                  class="rounded-xl w-full aspect-video object-cover"
+                  src="../images/projects/observo.jpg"
+                  alt="Observo AI"
+                />
+              </a>
+              <div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-2">
+                  Observo – AI-Powered Violence Detection
+                </h2>
+                <p class="text-[#8a6f5c] text-sm sm:text-base">
+                  A real-time violence detection system using CCTV, Object
+                  Detection and pose estimation. Integrated with Server for campus
+                  and public safety. Sends instant alerts upon threat detection.
+                </p>
+                <p class="text-[#8a6f5c] mt-1 text-xs sm:text-sm">
+                  Skills: AI/ML, Computer Vision, Edge Computing
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Project 2 -->
-  <div class="my-10" data-aos="zoom-in">
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-      <img
-        class="rounded-xl w-full aspect-video object-cover"
-        src="../images/projects/ccaa.png"
-        alt="Climate Change Awareness"
-      />
-      <div>
-        <h2 class="text-2xl font-bold mb-2">ClimateChangeAwareness</h2>
-        <p class="text-[#8a6f5c]">
-          An informative web platform to raise awareness on climate change
-          through interactive data visualizations, real-time metrics, and
-          educational resources.
-        </p>
-        <p class="text-[#8a6f5c] mt-1">
-          Skills: Web Dev, Data Visualization
-        </p>
-      </div>
-    </div>
-  </div>
+          <!-- Project 2 -->
+          <div class="p-0 sm:p-0 my-4 sm:my-10" data-aos="zoom-in">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
+              <img
+                class="rounded-xl w-full aspect-video object-cover"
+                src="../images/projects/ccaa.png"
+                alt="Climate Change Awareness"
+              />
+              <div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-2">ClimateChangeAwareness</h2>
+                <p class="text-[#8a6f5c] text-sm sm:text-base">
+                  An informative web platform to raise awareness on climate change
+                  through interactive data visualizations, real-time metrics, and
+                  educational resources.
+                </p>
+                <p class="text-[#8a6f5c] mt-1 text-xs sm:text-sm">
+                  Skills: Web Dev, Data Visualization
+                </p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Project 3 -->
-  <div class="p-6 bg-[#fcfaf8] rounded" data-aos="fade-up">
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-      <a href="https://adams-yashmalik2004s-projects.vercel.app/">
-        <img
-          class="rounded-xl w-full aspect-video object-cover"
-          src="../images/projects/adams.png"
-          alt="ADAMS Project"
-        />
-      </a>
-      <div>
-        <h2 class="text-2xl font-bold mb-2">
-          ADAMS – Animal Doctor Advanced Management System
-        </h2>
-        <p class="text-[#8a6f5c]">
-          A digital platform for managing pet clinic data including
-          appointments, medicine stock alerts, medical records, and email
-          reminders for medicine expiry.
-        </p>
-        <p class="text-[#8a6f5c] mt-1">Skills: Web Dev, Backend, DBMS</p>
-      </div>
-    </div>
-  </div>
+          <!-- Project 3 -->
+          <div class="p-4 sm:p-6 bg-[#fcfaf8] rounded" data-aos="fade-up">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
+              <a href="https://adams-yashmalik2004s-projects.vercel.app/">
+                <img
+                  class="rounded-xl w-full aspect-video object-cover"
+                  src="../images/projects/adams.png"
+                  alt="ADAMS Project"
+                />
+              </a>
+              <div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-2">
+                  ADAMS – Animal Doctor Advanced Management System
+                </h2>
+                <p class="text-[#8a6f5c] text-sm sm:text-base">
+                  A digital platform for managing pet clinic data including
+                  appointments, medicine stock alerts, medical records, and email
+                  reminders for medicine expiry.
+                </p>
+                <p class="text-[#8a6f5c] mt-1 text-xs sm:text-sm">Skills: Web Dev, Backend, DBMS</p>
+              </div>
+            </div>
+          </div>
 
-  <!-- Project 4 -->
-  <div class="my-10" data-aos="zoom-in">
-    <div class="grid md:grid-cols-2 gap-6 items-center">
-      <img
-        class="rounded-xl w-full aspect-video object-cover"
-        src="../images/projects/noti-fy.png"
-        alt="Noti-fy Bookstore"
-      />
-      <div>
-        <h2 class="text-2xl font-bold mb-2">
-          Noti-fy – Second-Hand Bookstore
-        </h2>
-        <p class="text-[#8a6f5c]">
-          A minimalist web platform for sharing and acquiring second-hand
-          books and notes for free. Built with a clean UI and real-time
-          update features.
-        </p>
-        <p class="text-[#8a6f5c] mt-1">Skills: Full Stack Dev, UI/UX</p>
-      </div>
-    </div>
-  </div>
-</div>
-
+          <!-- Project 4 -->
+          <div class="p-0 sm:p-0 my-4 sm:my-10" data-aos="zoom-in">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 items-center">
+              <img
+                class="rounded-xl w-full aspect-video object-cover"
+                src="../images/projects/noti-fy.png"
+                alt="Noti-fy Bookstore"
+              />
+              <div>
+                <h2 class="text-xl sm:text-2xl font-bold mb-2">
+                  Noti-fy – Second-Hand Bookstore
+                </h2>
+                <p class="text-[#8a6f5c] text-sm sm:text-base">
+                  A minimalist web platform for sharing and acquiring second-hand
+                  books and notes for free. Built with a clean UI and real-time
+                  update features.
+                </p>
+                <p class="text-[#8a6f5c] mt-1 text-xs sm:text-sm">Skills: Full Stack Dev, UI/UX</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
     <footer class="flex justify-center">
-      <div class="flex max-w-[960px] flex-1 flex-col">
-        <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+      <div class="flex max-w-full md:max-w-[960px] flex-1 flex-col">
+        <footer class="flex flex-col gap-6 px-2 md:px-5 py-10 text-center @container">
           <div class="flex flex-wrap justify-center gap-4">
             <a
               href="https://github.com/Yashmalik2004"
