@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Yash Malik- Blog</title>
+
+    <link rel="icon" type="image/x-icon" href="images/website-imgs/favicon.jpg" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#fcfaf8] group/design-root overflow-x-hidden"
+      style="font-family: Newsreader, 'Noto Sans', sans-serif"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex flex-col md:flex-row items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1edea] px-4 sm:px-6 md:px-10 py-3 gap-3 md:gap-0"
+        >
+          <div class="flex flex-col md:flex-row items-center gap-4 text-[#181410] w-full md:w-auto">
+            <div class="flex items-center gap-2">
+              <img src="images/website-imgs/logo.png" alt="Logo" class="w-6 h-6" />
+              <h2
+                class="text-[#181410] text-lg font-bold leading-tight tracking-[-0.015em]"
+              >
+                Yash Malik
+              </h2>
+            </div>
+            <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
+            <div class="flex flex-wrap items-center gap-3 text-sm text-[#8a6f5c]">
+              <a
+                href="mailto:yashmalik4832004two@gmail.com"
+                class="hover:underline break-all"
+                >yashmalik4832004two@gmail.com</a
+              >
+              <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
+              <a
+                href="https://github.com/Yashmalik2004"
+                target="_blank"
+                class="flex items-center gap-1 hover:underline"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                  class="w-4 h-4"
+                />
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/yash-malik-a03559322"
+                target="_blank"
+                class="flex items-center gap-1 hover:underline"
+              >
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                  alt="LinkedIn"
+                  class="w-4 h-4"
+                />
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-1 justify-end gap-4 md:gap-8 w-full md:w-auto mt-3 md:mt-0">
+            <div class="flex flex-wrap items-center gap-4 md:gap-9">
+              <a
+                class="text-[#181410] text-sm font-medium leading-normal"
+                href="index.html"
+                >Home</a
+              >
+              <a
+                class="text-[#181410] text-sm font-medium leading-normal"
+                href="projects.html"
+                >Projects</a
+              >
+              <a
+                class="text-[#181410] text-sm font-medium leading-normal"
+                href="certif.html"
+                >Experiences & Certifications</a
+              >
+              <a
+                class="text-[#181410] text-sm font-medium leading-normal"
+                href="#"
+                style="color: rgb(171, 89, 234); font-size: 20px"
+                >Blog</a
+              >
+              <a
+                class="text-[#181410] text-sm font-medium leading-normal"
+                href="contact.html"
+                >Contact</a
+              >
+              <a href="resume.html">
+                <button
+                  class="bg-[#f1edea] text-sm font-bold px-4 py-2 rounded-full"
+                >
+                  Resume
+                </button></a
+              >
+            </div>
+          </div>
+        </header>
+        <div class="px-2 sm:px-6 md:px-20 lg:px-40 flex flex-1 justify-center py-5 w-full">
+          <div
+            class="layout-content-container flex flex-col max-w-full md:max-w-[960px] flex-1"
+          >
+            <div class="flex flex-wrap justify-between gap-3 p-2 md:p-4">
+              <p
+                class="text-[#1b130e] tracking-light text-2xl md:text-[32px] font-bold leading-tight min-w-0 md:min-w-72"
+              >
+                Blog
+              </p>
+            </div>
+            <div class="p-2 md:p-4 @container">
+              <div
+                class="flex flex-col items-stretch justify-start rounded-xl gap-4 xl:flex-row xl:items-start"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="
+                    background-image: url('https://towardsdatascience.com/wp-content/uploads/2025/06/image-66.jpg');
+                  "
+                ></div>
+                <div
+                  class="flex w-full min-w-0 grow flex-col items-stretch justify-center gap-1 py-4 xl:px-4"
+                >
+                  <p
+                    class="text-[#1b130e] text-lg font-bold leading-tight tracking-[-0.015em]"
+                  >
+                    What PyTorch Really Means by a Leaf Tensor and Its Grad
+                  </p>
+                  <div class="flex flex-col sm:flex-row items-start sm:items-end gap-3 justify-between">
+                    <p
+                      class="text-[#976d4e] text-base font-normal leading-normal"
+                    >
+                      If you've ever worked with PyTorch's autograd system,
+                      you've likely come across the term “leaf tensor”—but what
+                      does it actually mean?
+                    </p>
+                    <a
+                      href="https://towardsdatascience.com/what-pytorch-really-means-by-a-leaf-tensor-2/"
+                      ><button
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-[#e56e19] text-[#fcfaf8] text-sm font-medium leading-normal mt-2 sm:mt-0"
+                      >
+                        <span class="truncate">Read More</span>
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2
+              class="text-[#1b130e] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 md:px-4 pb-3 pt-5"
+            >
+              Recent Posts
+            </h2>
+            <div class="p-2 md:p-4">
+              <div class="flex flex-col xl:flex-row items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#1b130e] text-base font-bold leading-tight">
+                      Predicting House Prices with Linear Regression
+                    </p>
+                    <p
+                      class="text-[#976d4e] text-sm font-normal leading-normal"
+                    >
+                      Explore the classic regression algorithm by predicting
+                      house prices based on features like size, location, and
+                      year built. This project gives you hands-on experience in
+                      cleaning data, training models, and interpreting results.
+                    </p>
+                  </div>
+                  <a href="https://realpython.com/linear-regression-in-python/">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f3ece7] text-[#1b130e] text-sm font-medium leading-normal w-fit"
+                    >
+                      <span class="truncate">Read More</span>
+                    </button></a
+                  >
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style="
+                    background-image: url('https://realpython.com/cdn-cgi/image/width=950,format=auto/https://files.realpython.com/media/fig-lin-reg.a506035b654a.png');
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="p-2 md:p-4">
+              <div class="flex flex-col xl:flex-row items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#1b130e] text-base font-bold leading-tight">
+                      A Visual Guide to Learning Rate Schedulers in PyTorch
+                    </p>
+                    <p
+                      class="text-[#976d4e] text-sm font-normal leading-normal"
+                    >
+                      Learning rate schedulers are key to optimizing deep
+                      learning models — but choosing and tuning them can be
+                      confusing. This blog uses beautiful visualizations to
+                      explain popular schedulers like StepLR, ExponentialLR, and
+                      CosineAnnealingLR, showing how each one affects training
+                      curves.
+                    </p>
+                  </div>
+                  <a
+                    href="https://towardsdatascience.com/a-visual-guide-to-learning-rate-schedulers-in-pytorch-24bbb262c863"
+                  >
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f3ece7] text-[#1b130e] text-sm font-medium leading-normal w-fit"
+                    >
+                      <span class="truncate">Read More</span>
+                    </button></a
+                  >
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style="
+                    background-image: url('https://towardsdatascience.com/wp-content/uploads/2022/12/1qe6nYlH8zsmUdScyHMhRCQ-2048x1024.png');
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="p-2 md:p-4">
+              <div class="flex flex-col xl:flex-row items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-[2_2_0px] flex-col gap-4">
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[#1b130e] text-base font-bold leading-tight">
+                      Under the Hood: Autograd in PyTorch Explained
+                    </p>
+                    <p
+                      class="text-[#976d4e] text-sm font-normal leading-normal"
+                    >
+                      Autograd is the backbone of automatic differentiation in
+                      PyTorch — but how does it actually work? This blog breaks
+                      down the autograd engine, computation graphs, and how
+                      gradients flow in PyTorch operations, with code to
+                      visualize each step.
+                    </p>
+                  </div>
+                  <a
+                    href="https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html"
+                  >
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 flex-row-reverse bg-[#f3ece7] text-[#1b130e] text-sm font-medium leading-normal w-fit"
+                    >
+                      <span class="truncate">Read More</span>
+                    </button></a
+                  >
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style="
+                    background-image: url('https://th.bing.com/th/id/OIP.G3Fg08G2LDgafKCbG3lsswAAAA?w=314&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3');
+                  "
+                ></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center p-4">
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div
+                  class="text-[#1b130e]"
+                  data-icon="CaretLeft"
+                  data-size="18px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18px"
+                    height="18px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+              <a
+                class="text-sm font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-[#1b130e] rounded-full bg-[#f3ece7]"
+                href="#"
+                >1</a
+              >
+              <span
+                class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#1b130e] rounded-full"
+                href="#"
+                >...</span
+              >
+              <a href="#" class="flex size-10 items-center justify-center">
+                <div
+                  class="text-[#1b130e]"
+                  data-icon="CaretRight"
+                  data-size="18px"
+                  data-weight="regular"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18px"
+                    height="18px"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-full md:max-w-[960px] flex-1 flex-col">
+            <div class="flex flex-col gap-6 px-2 md:px-5 py-10 text-center @container">
+              <div class="flex flex-wrap justify-center gap-4">
+                <!-- GitHub -->
+                <a
+                  href="https://github.com/Yashmalik2004"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="text-[#8a6f5c]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 .5C5.66.5.5 5.84.5 12.33c0 5.23 3.44 9.65 8.21 11.21.6.1.82-.26.82-.58v-2.13c-3.34.74-4.04-1.61-4.04-1.61-.55-1.42-1.34-1.8-1.34-1.8-1.1-.78.09-.76.09-.76 1.22.09 1.87 1.3 1.87 1.3 1.09 1.91 2.86 1.36 3.55 1.04.11-.82.43-1.36.78-1.67-2.66-.32-5.47-1.39-5.47-6.18 0-1.37.46-2.5 1.21-3.38-.12-.33-.53-1.66.12-3.47 0 0 1-.33 3.4 1.29a11.75 11.75 0 0 1 6.2 0c2.4-1.62 3.4-1.29 3.4-1.29.65 1.81.24 3.14.12 3.47.76.88 1.21 2.01 1.21 3.38 0 4.81-2.81 5.85-5.49 6.16.44.39.84 1.16.84 2.35v3.48c0 .32.22.69.83.57 4.76-1.56 8.2-5.98 8.2-11.21C23.5 5.84 18.34.5 12 .5Z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <!-- Instagram -->
+                <a
+                  href="https://www.instagram.com/yashu_huh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="text-[#8a6f5c]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <!-- LinkedIn -->
+                <a
+                  href="https://www.linkedin.com/in/yash-malik-a03559322"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="text-[#8a6f5c]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24px"
+                      height="24px"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM88,184a8,8,0,0,1-8,8H72a8,8,0,0,1-8-8V112a8,8,0,0,1,8-8h8a8,8,0,0,1,8,8ZM76,96a12,12,0,1,1,12-12A12,12,0,0,1,76,96Zm112,88a8,8,0,0,1-8,8h-8a8,8,0,0,1-8-8V144c0-10.91-7.59-16-16-16s-16,5.09-16,16v40a8,8,0,0,1-8,8h-8a8,8,0,0,1-8-8V112a8,8,0,0,1,8-8h8a8,8,0,0,1,8,8v4.67A31.43,31.43,0,0,1,164,112c18.2,0,24,14.5,24,32Z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#8a6f5c] text-base font-normal leading-normal">
+                Yash Malik.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
