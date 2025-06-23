@@ -13,6 +13,7 @@
   <link rel="icon" type="image/x-icon" href="../images/website-imgs/favicon.jpg" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <body>
@@ -20,18 +21,18 @@
     style="font-family: Newsreader, 'Noto Sans', sans-serif">
     <div class="layout-container flex h-full grow flex-col">
       <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1edea] px-10 py-3">
-        <div class="flex items-center gap-4 text-[#181410]">
+        class="flex flex-col md:flex-row items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1edea] px-4 sm:px-6 md:px-10 py-3 gap-3 md:gap-0">
+        <div class="flex flex-col md:flex-row items-center gap-4 text-[#181410] w-full md:w-auto">
           <div class="flex items-center gap-2">
             <img src="../images/website-imgs/logo.png" alt="Logo" class="w-6 h-6" />
             <h2 class="text-[#181410] text-lg font-bold leading-tight tracking-[-0.015em]">
               Yash Malik
             </h2>
           </div>
-          <div class="h-5 w-px bg-[#ccc]"></div>
-          <div class="flex items-center gap-3 text-sm text-[#8a6f5c]">
+          <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
+          <div class="flex flex-wrap items-center gap-3 text-sm text-[#8a6f5c]">
             <a href="mailto:yashmalik4832004two@gmail.com" class="hover:underline">yashmalik4832004two@gmail.com</a>
-            <div class="h-5 w-px bg-[#ccc]"></div>
+            <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
             <a href="https://github.com/Yashmalik2004" target="_blank" class="flex items-center gap-1 hover:underline">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
                 class="w-4 h-4" />
@@ -46,8 +47,8 @@
           </div>
         </div>
 
-        <div class="flex flex-1 justify-end gap-8">
-          <div class="flex items-center gap-9">
+        <div class="flex flex-1 justify-end gap-4 md:gap-8 w-full md:w-auto mt-3 md:mt-0">
+          <div class="flex flex-wrap items-center gap-4 md:gap-9">
             <a class="text-[#181410] text-sm font-medium leading-normal" href="index.html">Home</a>
             <a class="text-[#181410] text-sm font-medium leading-normal" href="projects.html">Projects</a>
             <a class="text-[#181410] text-sm font-medium leading-normal" href="certif.html">Experiences &
@@ -60,25 +61,21 @@
                 Resume
               </button></a>
           </div>
-          <!-- <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style="background-image: url('../images/myimg.jpg')"
-            ></div> -->
         </div>
       </header>
-      <div class="px-40 flex flex-1 justify-center py-5">
-        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-          <div class="flex flex-wrap justify-between gap-3 p-4">
-            <p class="text-[#1b130e] tracking-light text-[32px] font-bold leading-tight min-w-72">
+      <div class="px-2 sm:px-6 md:px-20 lg:px-40 flex flex-1 justify-center py-5 w-full">
+        <div class="layout-content-container flex flex-col max-w-full md:max-w-[960px] flex-1 w-full">
+          <div class="flex flex-wrap justify-between gap-3 p-2 md:p-4">
+            <p class="text-[#1b130e] tracking-light text-2xl md:text-[32px] font-bold leading-tight min-w-0 md:min-w-72">
               Contact Me
             </p>
           </div>
-          <p class="text-[#1b130e] text-base font-normal leading-normal pb-3 pt-1 px-4">
+          <p class="text-[#1b130e] text-base font-normal leading-normal pb-3 pt-1 px-2 md:px-4">
             I'm always excited to discuss new opportunities and
             collaborations. Please feel free to reach out using the form below
             or via the provided contact details.
           </p>
-          <form action="https://formspree.io/f/mblyzykp" method="POST" class="max-w-[480px] px-4 py-3 space-y-4">
+          <form action="https://formspree.io/f/mblyzykp" method="POST" class="max-w-full sm:max-w-[480px] px-2 md:px-4 py-3 space-y-4">
 
             <!-- Name -->
             <label class="flex flex-col">
@@ -107,21 +104,21 @@
               Send Message
             </button>
           </form>
-<div id="successMessage" class="hidden text-green-600 mt-2">Message sent!</div>
+          <div id="successMessage" class="hidden text-green-600 mt-2">Message sent!</div>
 
-          <h2 class="text-[#1b130e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+          <h2 class="text-[#1b130e] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 md:px-4 pb-3 pt-5">
             Additional Contact Information
           </h2>
-          <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
-            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#e7d9d0] py-5">
+          <div class="p-2 md:p-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6">
+            <div class="col-span-1 sm:col-span-2 grid grid-cols-[30%_1fr] border-t border-t-[#e7d9d0] py-5">
               <p class="text-[#976d4e] text-sm font-normal leading-normal">
                 Email
               </p>
-              <p class="text-[#1b130e] text-sm font-normal leading-normal">
+              <p class="text-[#1b130e] text-sm font-normal leading-normal break-all">
                 yashmalik4832004two@@gmail.com
               </p>
             </div>
-            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#e7d9d0] py-5">
+            <div class="col-span-1 sm:col-span-2 grid grid-cols-[30%_1fr] border-t border-t-[#e7d9d0] py-5">
               <p class="text-[#976d4e] text-sm font-normal leading-normal">
                 Phone
               </p>
@@ -129,7 +126,7 @@
                 +91 9971806132
               </p>
             </div>
-            <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#e7d9d0] py-5">
+            <div class="col-span-1 sm:col-span-2 grid grid-cols-[30%_1fr] border-t border-t-[#e7d9d0] py-5">
               <p class="text-[#976d4e] text-sm font-normal leading-normal">
                 Address
               </p>
@@ -141,8 +138,8 @@
         </div>
       </div>
       <footer class="flex justify-center">
-        <div class="flex max-w-[960px] flex-1 flex-col">
-          <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+        <div class="flex max-w-full md:max-w-[960px] flex-1 flex-col">
+          <footer class="flex flex-col gap-6 px-2 md:px-5 py-10 text-center @container">
             <div class="flex flex-wrap justify-center gap-4">
               <a href="https://github.com/Yashmalik2004" target="_blank" rel="noopener noreferrer">
                 <div class="text-[#8a6f5c]">
@@ -182,25 +179,25 @@
       </footer>
     </div>
     <script>
-  const form = document.querySelector("form");
-  const success = document.getElementById("successMessage");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    }).then(response => {
-      if (response.ok) {
-        success.classList.remove("hidden");
-        form.reset();
-      }
-    });
-  });
-</script>
+      const form = document.querySelector("form");
+      const success = document.getElementById("successMessage");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        }).then(response => {
+          if (response.ok) {
+            success.classList.remove("hidden");
+            form.reset();
+          }
+        });
+      });
+    </script>
 
 </body>
 
