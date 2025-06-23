@@ -21,17 +21,17 @@
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   </head>
+  <!-- ...existing code... -->
   <body>
-
     <div
       class="relative flex size-full min-h-screen flex-col bg-[#fbfaf9] group/design-root overflow-x-hidden"
       style="font-family: Newsreader, 'Noto Sans', sans-serif"
     >
       <div class="layout-container flex h-full grow flex-col">
         <header
-          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1edea] px-10 py-3"
+          class="flex flex-col md:flex-row items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1edea] px-4 md:px-10 py-3 gap-3 md:gap-0"
         >
-          <div class="flex items-center gap-4 text-[#181410]">
+          <div class="flex flex-col md:flex-row items-center gap-4 text-[#181410] w-full md:w-auto">
             <div class="flex items-center gap-2">
               <img
                 src="../images/website-imgs/logo.png"
@@ -44,14 +44,14 @@
                 Yash Malik
               </h2>
             </div>
-            <div class="h-5 w-px bg-[#ccc]"></div>
-            <div class="flex items-center gap-3 text-sm text-[#8a6f5c]">
+            <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
+            <div class="flex flex-wrap items-center gap-3 text-sm text-[#8a6f5c]">
               <a
                 href="mailto:yashmalik4832004two@gmail.com"
-                class="hover:underline"
+                class="hover:underline break-all"
                 >yashmalik4832004two@gmail.com</a
               >
-              <div class="h-5 w-px bg-[#ccc]"></div>
+              <div class="hidden md:block h-5 w-px bg-[#ccc]"></div>
               <a
                 href="https://github.com/Yashmalik2004"
                 target="_blank"
@@ -78,9 +78,8 @@
               </a>
             </div>
           </div>
-
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
+          <div class="flex flex-1 justify-end gap-4 md:gap-8 w-full md:w-auto mt-3 md:mt-0">
+            <div class="flex flex-wrap items-center gap-4 md:gap-9">
               <a
                 class="text-[#181410] text-sm font-medium leading-normal"
                 href="#"
@@ -115,21 +114,17 @@
                 </button></a
               >
             </div>
-            <!-- <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style="background-image: url('../images/myimg.jpg')"
-            ></div> -->
           </div>
         </header>
 
-        <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="px-2 sm:px-6 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
           <div
-            class="layout-content-container flex flex-col max-w-[960px] flex-1"
+            class="layout-content-container flex flex-col max-w-full md:max-w-[960px] flex-1"
           >
-            <div class="flex flex-wrap justify-between gap-3 p-4">
-              <div class="flex min-w-72 flex-col gap-3">
+            <div class="flex flex-wrap justify-between gap-3 p-2 md:p-4">
+              <div class="flex min-w-0 md:min-w-72 flex-col gap-3">
                 <p
-                  class="text-[#181410] tracking-light text-[32px] font-bold leading-tight"
+                  class="text-[#181410] tracking-light text-2xl md:text-[32px] font-bold leading-tight"
                 >
                   About Me
                 </p>
@@ -139,13 +134,13 @@
                 </p>
               </div>
             </div>
-            <div class="flex p-4 @container">
+            <div class="flex flex-col p-2 md:p-4 @container">
               <div
                 class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center"
               >
-                <div class="flex gap-4">
+                <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
                   <div
-                    class="w-32 h-32 rounded-full overflow-hidden shrink-0 transition-transform duration-300 hover:scale-110"
+                    class="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden shrink-0 transition-transform duration-300 hover:scale-110"
                   >
                     <img
                       src="../images/website-imgs/myimg.jpg"
@@ -154,15 +149,14 @@
                       id="myimg"
                     />
                   </div>
-
-                  <div class="flex flex-col justify-center">
+                  <div class="flex flex-col justify-center text-center sm:text-left">
                     <p
-                      class="text-[#181410] text-[22px] font-bold leading-tight tracking-[-0.015em]"
+                      class="text-[#181410] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em]"
                     >
                       Yash Malik
                     </p>
                     <p
-                      class="text-3xl font-bold text-[#181410] dark:text-black mb-2"
+                      class="text-xl md:text-3xl font-bold text-[#181410] dark:text-black mb-2"
                     >
                       I'm <span class="text-purple-600" id="typingText"></span>
                   </p>
@@ -181,12 +175,12 @@
               </div>
             </div>
             <h2
-              class="text-[#181410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              class="text-[#181410] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 md:px-4 pb-3 pt-5"
             >
               My Story
             </h2>
             <p
-              class="text-[#181410] text-base font-normal leading-normal pb-3 pt-1 px-4"
+              class="text-[#181410] text-base font-normal leading-normal pb-3 pt-1 px-2 md:px-4"
             >
               From sketching classic designs to coding intelligent systems, my
               journey has been a unique fusion of art and engineering. Early
@@ -197,12 +191,12 @@
               execution.
             </p>
             <h2
-              class="text-[#181410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              class="text-[#181410] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 md:px-4 pb-3 pt-5"
             >
               Skills
             </h2>
             <div
-              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-3 p-2 md:p-4"
             >
               <div
                 class="flex flex-1 gap-3 rounded-lg border border-[#e2dad4] bg-[#fbfaf9] p-4 items-center"
@@ -330,13 +324,13 @@
                 </h2>
               </div>
             </div>
-            <h2
-              class="text-[#181410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                        <h2
+              class="text-[#181410] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 md:px-4 pb-3 pt-5"
             >
               Tech Stack
             </h2>
             <div
-              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-3 p-2 md:p-4"
             >
               <div
                 class="flex flex-1 gap-3 rounded-lg border border-[#e2dad4] bg-[#fbfaf9] p-4 items-center"
@@ -490,11 +484,11 @@
               </div>
             </div>
             <h2
-              class="text-[#181410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              class="text-[#181410] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 md:px-4 pb-3 pt-5"
             >
               Experience
-            </h2>
-            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+           </h2>
+            <div class="grid grid-cols-[32px_1fr] md:grid-cols-[40px_1fr] gap-x-2 px-2 md:px-4">
               <div class="flex flex-col items-center gap-1 pt-3">
                 <div
                   class="text-[#181410]"
@@ -585,11 +579,11 @@
               </div>
             </div>
             <h2
-              class="text-[#181410] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              class="text-[#181410] text-lg md:text-[22px] font-bold leading-tight tracking-[-0.015em] px-2 md:px-4 pb-3 pt-5"
             >
               Education
             </h2>
-            <div class="p-4 grid grid-cols-2">
+            <div class="p-2 md:p-4 grid grid-cols-1 md:grid-cols-2 gap-2">
               <div
                 class="flex flex-col gap-1 border-t border-solid border-t-[#e2dad4] py-4 pr-2"
               >
@@ -614,9 +608,10 @@
           </div>
         </div>
         <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer
-              class="flex flex-col gap-6 px-5 py-10 text-center @container"
+         
+          <div class="flex max-w-full md:max-w-[960px] flex-1 flex-col">
+             <footer
+              class="flex flex-col gap-6 px-2 md:px-5 py-10 text-center @container"
             >
               <div class="flex flex-wrap justify-center gap-4">
                 <a
@@ -721,7 +716,6 @@
 
       type();
     </script>
-    
-
+  
   </body>
 </html>
